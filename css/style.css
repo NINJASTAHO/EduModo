@@ -133,6 +133,9 @@ a, a:hover{
 	width: 100%;
 	padding: 80px 0px 0px;
 }
+.limitless .img-fluid{
+	margin-left: -60px;
+}
 .limitless .inner-text{
 	width: 100%;
 }
