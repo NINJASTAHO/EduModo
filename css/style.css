@@ -347,7 +347,8 @@ a, a:hover{
 	border-radius: 0;
 	border: 1px solid #ffc178;
 	position: absolute;
-	right: 6%;
+	right: 5%;
+	bottom: 26%;
 	font-size: 12px;
 	font-weight: 300;
 	background: #ffc178;
