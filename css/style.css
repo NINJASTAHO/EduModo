@@ -60,7 +60,7 @@ a, a:hover{
 }
 .header-section .banner .banner-inner{
 	width: 100%;
-	padding: 0px 0px 150px;
+	padding: 0px 15px 150px;
 }
 .header-section .banner .banner-inner h1{
 	font-size: 38px;
@@ -128,7 +128,6 @@ a, a:hover{
 	color: #fff;
 	font-weight: 600;
 }
-
 .limitless{
 	width: 100%;
 	padding: 80px 0px 0px;
@@ -341,6 +340,7 @@ a, a:hover{
 .top-widget-footer .inner-widget form .form-control:hover, .top-widget-footer .inner-widget form .form-control:focus{
 	border: 1px solid #ffc178;
 	box-shadow: none;
+	outline: none;
 }
 .top-widget-footer .inner-widget form .btn-primary{
 	padding: 9px 20px;
@@ -358,6 +358,7 @@ a, a:hover{
 	background: #fff;
 	color: #ffc178;
 	box-shadow: none;
+	outline: none;
 }
 /***************************/
 .main-footer-area{
@@ -386,3 +387,322 @@ a, a:hover{
 .main-footer-area .footer-menu li a:hover{
 	color: #969595;
 }
+/*Responsive starts here*/
+
+	/* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+	  
+		.header-section .menu .btn-info {
+    		margin-left: 12px;
+    		margin-top: 12px;
+    	}
+		.service-inner img{
+			width: 90px;
+		}  
+		.top-widget-footer .inner-widget form .form-control {
+    		font-size: 12px;
+	  	}
+	  	.header-section .navbar-light .navbar-nav .nav-link{
+	  		padding-bottom: 2px;
+	  	}
+	  	.header-section .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	  		border-bottom: 0px;
+	  	}
+	  	.feature-section .title p {
+		    margin-bottom: 50px;
+		}
+	  	.service-inner h4 {
+    		font-size: 17px;
+    		padding-top: 15px;
+    	}
+    	.limitless .img-fluid {
+		    margin-left: -15px;
+		}
+		.inner-text h2 {
+		    font-size: 28px;
+		    line-height: 40px;
+		}
+		.inner-text p {
+		    font-size: 11px;
+		    line-height: 22px;
+		    font-weight: 500;
+		}
+		.around {
+    		padding: 25px 0px;
+		}
+		.hours {
+		   margin-left: -15px;
+		}
+		.hours h1 {
+	   		font-size: 35px;
+	   		margin-top: -15px;
+		}	
+		.courses h1 {
+    		font-size: 35px;
+    	    margin-top: -15px;
+    	}
+    	.students h1 {
+    		font-size: 35px;
+    	    margin-top: -15px;
+    	}
+    	.around .title {
+		    padding: 0px 0px 30px;
+		}
+		.around .card-body {
+		    padding: .5rem;
+		}
+		.around .card-title {
+		    font-size: 10px;
+		    line-height: 20px;
+		}
+		.around .card-text {
+		    font-size: 10px;
+		}
+		.around .mbot .card-text {
+		    margin-bottom: 8px;
+    		line-height: 16px;
+		}
+		.around .btn-link {
+		    font-size: 12px;
+		}
+		.top-widget-footer .inner-widget img {
+		    margin-bottom: 15px;
+		    width: 130px;
+		}
+		.top-widget-footer .col-sm-4 {
+		    padding-right: 0px;
+		    padding-left: 0px;
+		}
+		.top-widget-footer .inner-widget hr {
+		    width: 87%;
+		}
+		.top-widget-footer .inner-widget .social-icons li a {
+		    font-size: 17px;
+		    margin: 0px 10px 0px 0px;
+		}
+		.top-widget-footer .inner-widget p {
+		    font-size: 9px;
+		}.top-widget-footer .inner-widget h4 {
+		    font-size: 13px;
+		    margin-bottom: 24px;
+		}
+		.top-widget-footer .inner-widget .list-group-item {
+		    font-size: 10px;
+		    padding: 2px 0px;
+		}
+		.top-widget-footer .inner-widget .list-group-item span {
+		    font-size: 9px;
+		}
+		.top-widget-footer .inner-widget .nav-link {
+		   	font-size: 10px;
+		    padding-bottom: 0px;
+		    margin-top: -4px;
+		}
+		.top-widget-footer .inner-widget form .btn-primary {
+		    padding: 7px 10px;
+		    right: -4%;
+		    bottom: 25%;
+		    font-size: 10px;
+    	}
+    	.main-footer-area .footer-menu li a {
+		    font-size: 12px;
+		    margin: 0px 8px 0px 0px;
+		}
+		.copy-right{
+			margin-left: -5px;
+			font-size: 12px;
+		}
+		.f{
+			margin-left: -35px;
+		}
+		.i{
+			margin-left: 14px;
+		}
+    }
+	/* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	  	.header-section .menu {
+		    padding-top: 20px;
+		}
+	  	.header-section .menu .btn-info {
+		    margin-top: 0;
+		}
+	  	.service-inner img {
+		    width: 130px;
+		}
+	  	.around .mbot .card-text {
+		    margin-bottom: 17px;
+		    line-height: 22px;
+		}
+		.top-widget-footer .inner-widget form .btn-primary {
+		    right: 4%;
+		    bottom: 25%;
+		    font-size: 11px;
+		}
+		.top-widget-footer .inner-widget p {
+		    font-size: 11px;
+		}
+		.top-widget-footer .inner-widget .list-group-item {
+		    font-size: 11px;
+		    padding: 4px 0px 0px;
+		}
+		.top-widget-footer .inner-widget .nav-link {
+		    font-size: 11px;
+		}
+		.main-footer-area .footer-menu{
+		    margin-left: -15px;
+		}
+	}
+
+	/* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+
+	@media (min-width: 481px) and (max-width: 767px) {
+	  
+	  //CSS
+	  
+	}
+
+	/* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+	@media (min-width: 320px) and (max-width: 480px) {
+	  	
+	  	.header-section .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	  		border-bottom: 0px;
+	  	}
+		.header-section .menu .btn-info {
+		    padding: 8px 15px;
+		    font-size: 14px;
+		    margin-top: 9px;
+		}
+		.header-section .banner {
+		    width: 100%;
+		    padding: 60px 0px 0px;
+		}
+		.header-section .banner .banner-inner h1 {
+		    font-size: 24px;
+		    line-height: 28px;
+		    text-align: center;
+		}
+		.header-section .banner .banner-inner p {
+		    font-size: 12px;
+		    line-height: 24px;
+		    color: #5a6e79;
+		    text-align: center;
+		}
+		.header-section .banner .banner-inner .btn-info {
+		    padding: 8px 20px;
+		    margin-top: 5px;
+		    margin-left: 80px;
+		    font-size: 14px;
+		}
+		.feature-section .title h1 {
+		    font-size: 22px;
+		    line-height: 35px;
+		}
+		.feature-section .title p {
+		    font-size: 13px;
+		    line-height: 20px;
+		    padding: 0px 40px;
+		}
+		.feature-section .service-inner {
+		    margin-bottom: 15px;
+		}
+		.feature-section .service-inner img{
+			width: 180px;
+		}
+		.feature-section .service-inner h4{
+			font-size: 20px;
+		}
+		.limitless .img-fluid {
+		    margin-left: 0px;
+		    margin-top: -41px;
+		}
+		.inner-text h2 {
+		    font-size: 24px;
+		    line-height: 35px;
+		    padding-bottom: 15px;
+		    text-align: center;
+		    margin-top: 30px;
+		}
+		.inner-text p {
+		    font-size: 11px;
+		    line-height: 22px;
+		    text-align: center;
+		}
+		.inner-text h1{
+			text-align: center;
+		}
+		.inner-text .students{
+			padding: 5px 0px;
+		}
+		.inner-text .hours{
+			padding: 5px 0px;
+		}
+		.inner-text .courses{
+			padding: 5px 0px;
+		}
+		.around {
+		   	padding: 30px 0px;
+		}
+		.around .title {
+		   	padding: 0px 0px 30px;
+		}
+		.around .title h2{
+			font-size: 25px;
+		}
+		.top-widget-footer {
+		    padding: 55px 0px;
+		    text-align: center;
+		}
+		.top-widget-footer .inner-widget h4 {
+		    font-size: 15px;
+		    margin-bottom: 10px;
+		    margin-top: 30px;
+		}
+		.top-widget-footer .inner-widget .list-group-item {
+		    font-size: 13px;
+		    padding: 5px 0px;
+		}
+		.top-widget-footer .inner-widget p {
+		    font-size: 13px;
+		}
+		.top-widget-footer .inner-widget .nav-link {
+    		padding: 4px;
+		    font-size: 13px;
+		}
+		.top-widget-footer .inner-widget form .btn-primary {
+		    padding: 9px 20px;
+		    position: absolute;
+		    right: 8%;
+		    bottom: 0%;
+		    font-size: 11px;
+		}
+		.top-widget-footer .inner-widget form .form-control {
+		    font-size: 15px;
+		    position: relative;
+		    left: 8%;
+		}
+		.main-footer-area {
+		    font-size: 11px;
+		    padding: 15px 0px 5px;
+		    text-align: center;
+		}
+		.main-footer-area .footer-menu li a {
+		    font-size: 12px;
+		    margin: 0px 10px 0px 0px;
+		}
+	}
