@@ -19,12 +19,25 @@ a, a:hover{
 	background: url("../images/bg.png") center center no-repeat;
 	background-size: cover;
 }
-.header-section .menu{
+.header-section .bg-light{
 	width: 100%;
+	background: #FFF9F3;
 }
-.header-section .menu .bg-light{
-	background: transparent !important;
+.header-section .navbar{
+	width: 100%;
+	background: rgba( 255, 249, 243, .8) !important;
 }
+/*.header-section .navbar-wrapper {
+	width: 100%;
+	position: relative;
+	z-index: 15;
+	background: rgb( 255, 249, 243) ;
+}
+.header-section .isStuck{
+    left:0px;
+    width:100%;
+	background: rgba( 255, 249, 243, .8) !important;
+}*/
 .header-section .navbar-light .navbar-nav .nav-link {
     color: #5a6e79;
     margin: 0px 12px;
@@ -37,7 +50,7 @@ a, a:hover{
     outline: none;
     border-bottom: 1px solid #ffc178; 
 }
-.header-section .menu .btn-info{
+.header-section .btn-info{
 	padding: 10px 35px;
 	background: #fff;
 	color: #ffc178;
@@ -47,7 +60,7 @@ a, a:hover{
 	margin-left: 10px;
 	transition: 1s ease-in-out;
 }
-.header-section .menu .btn-info:hover, .header-section .menu .btn-info:focus{
+.header-section .btn-info:hover, .header-section .btn-info:focus{
 	background: #ffc178;
 	color: #fff;
 	border: 1px solid #ffc178;
@@ -56,11 +69,11 @@ a, a:hover{
 /*********************************/
 .header-section .banner{
 	width: 100%;
-	padding: 100px 0px 210px;
+	padding: 200px 0px 210px;
 }
 .header-section .banner .banner-inner{
 	width: 100%;
-	padding: 0px 15px 150px;
+	padding: 0px 0px 150px;
 }
 .header-section .banner .banner-inner h1{
 	font-size: 38px;
@@ -83,6 +96,7 @@ a, a:hover{
 	border-radius: 30px;
 	font-size: 16px;
 	transition: 1s ease-in-out;
+	margin-left: 0px;
 }
 .header-section .banner .banner-inner .btn-info:hover, .header-section .banner .banner-inner .btn-info:focus{
 	background: #fff;
@@ -396,10 +410,13 @@ a, a:hover{
 
 	@media (min-width: 768px) and (max-width: 1024px) {
 	  
-		.header-section .menu .btn-info {
+		.header-section .btn-info {
     		margin-left: 12px;
     		margin-top: 12px;
     	}
+    	.header-section img{
+			margin-left: 20px;
+		} 
 		.service-inner img{
 			width: 90px;
 		}  
@@ -529,10 +546,13 @@ a, a:hover{
 	*/
 
 	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	  	.header-section .menu {
+	  	.header-section {
 		    padding-top: 20px;
 		}
-	  	.header-section .menu .btn-info {
+    	.header-section img{
+			margin-left: 0px;
+		} 
+	  	.header-section .btn-info {
 		    margin-top: 0;
 		}
 	  	.service-inner img {
@@ -563,27 +583,24 @@ a, a:hover{
 	}
 
 	/* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-
-	@media (min-width: 481px) and (max-width: 767px) {
-	  
-	  //CSS
-	  
-	}
-
-	/* 
 	  ##Device = Most of the Smartphones Mobiles (Portrait)
 	  ##Screen = B/w 320px to 479px
 	*/
 
 	@media (min-width: 320px) and (max-width: 480px) {
 	  	
+	  	.header-section img{
+	  		width: 50px;
+	  	}
 	  	.header-section .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
 	  		border-bottom: 0px;
 	  	}
-		.header-section .menu .btn-info {
+	  	.navbar-light .navbar-toggler {
+		    color: rgba(0,0,0,.5);
+		    border-color: rgba(0,0,0,.1);
+		    font-size: 14px;
+		}
+		.header-section .btn-info {
 		    padding: 8px 15px;
 		    font-size: 14px;
 		    margin-top: 9px;
@@ -591,6 +608,9 @@ a, a:hover{
 		.header-section .banner {
 		    width: 100%;
 		    padding: 60px 0px 0px;
+		}
+		.header-section .banner .banner-inner{
+		    padding-top: 70px;
 		}
 		.header-section .banner .banner-inner h1 {
 		    font-size: 24px;
@@ -606,7 +626,7 @@ a, a:hover{
 		.header-section .banner .banner-inner .btn-info {
 		    padding: 8px 20px;
 		    margin-top: 5px;
-		    margin-left: 80px;
+		    margin-left: 95px;
 		    font-size: 14px;
 		}
 		.feature-section .title h1 {
@@ -705,4 +725,161 @@ a, a:hover{
 		    font-size: 12px;
 		    margin: 0px 10px 0px 0px;
 		}
+	}
+
+	/* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+
+	@media (min-width: 481px) and (max-width: 767px) {
+	  
+	 	
+	  	.header-section .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	  		border-bottom: 0px;
+	  	}
+	  	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
+		    padding-right: 0;
+		    padding-left: 14px;
+		}
+		.header-section .btn-info {
+		    padding: 8px 15px;
+		    font-size: 14px;
+		    margin-top: 9px;
+		}
+		.header-section .banner {
+		    width: 100%;
+		    padding: 135px 0px 0px;
+		}
+		.header-section .banner .banner-inner h1 {
+		    font-size: 24px;
+		    line-height: 28px;
+		}
+		.header-section .banner .banner-inner p {
+		    font-size: 12px;
+		    line-height: 24px;
+		    color: #5a6e79;
+		}
+		.header-section .banner .banner-inner .btn-info {
+		    padding: 8px 20px;
+		    margin-top: 5px;
+		    font-size: 14px;
+		}
+		.feature-section .title h1 {
+		    font-size: 22px;
+		    line-height: 35px;
+		}
+		.feature-section .title p {
+		    font-size: 12px;
+		    line-height: 20px;
+		    padding: 0px 40px 40px;
+		}
+		.feature-section .service-inner {
+		    margin-bottom: 15px;
+		}
+		.feature-section .service-inner img{
+			width: 180px;
+		}
+		.feature-section .service-inner h4{
+			font-size: 20px;
+		}
+		.limitless .img-fluid {
+		    margin-left: 0px;
+		    margin-top: -41px;
+		}
+		.inner-text h2 {
+		    font-size: 24px;
+		    line-height: 35px;
+		    padding-bottom: 15px;
+		    text-align: center;
+		    margin-top: 30px;
+		}
+		.inner-text p {
+		    font-size: 11px;
+		    line-height: 22px;
+		    text-align: center;
+		}
+		.inner-text h1{
+			text-align: center;
+		}
+		.inner-text .students{
+			padding: 5px 0px;
+		}
+		.inner-text .hours{
+			padding: 5px 0px;
+		}
+		.inner-text .courses{
+			padding: 5px 0px;
+		}
+		.around {
+		   	padding: 30px 0px;
+		}
+		.around .title {
+		   	padding: 0px 0px 30px;
+		}
+		.around .title h2{
+			font-size: 25px;
+		}
+		.top-widget-footer {
+		    padding: 55px 0px;
+		    text-align: center;
+		}
+		.top-widget-footer .col-sm-4 {
+		    padding-right: 0px;
+		    padding-left: 4px;
+		}
+		.top-widget-footer .inner-widget h4 {
+		    font-size: 14px;
+		    margin-bottom: 10px;
+		}
+		.top-widget-footer .inner-widget img {
+		    margin-bottom: 9px;
+		    width: 100px;
+		}
+		.top-widget-footer .inner-widget .list-group-item {
+		    font-size: 10px;
+		    padding: 3px 0px;
+		}
+		.top-widget-footer .inner-widget p {
+		    font-size: 10px;
+		}
+		.top-widget-footer .inner-widget .nav-link {
+		    padding: 3px;
+		    font-size: 11px;
+		}
+		.top-widget-footer .inner-widget .list-group-item span {
+		    font-size: 9px;
+		    color: #6b6b6b;
+		}
+		.top-widget-footer .inner-widget .social-icons {
+		    width: 100%;
+		    margin-left: 4px;
+		}
+		.top-widget-footer .inner-widget .social-icons li a {
+		    font-size: 20px;
+		    color: #4a4a4a;
+		    margin: 5px 15px 0px 11px;
+		}
+		.top-widget-footer .inner-widget form .btn-primary {
+		    padding: 9px 20px;
+		    position: absolute;
+		    right: 21%;
+		    bottom: 0%;
+		    font-size: 11px;
+		}
+		.top-widget-footer .inner-widget form .form-control {
+		    font-size: 15px;
+		    position: relative;
+		    left: 45%;
+		}
+		.main-footer-area {
+		    font-size: 11px;
+		    padding: 15px 0px 5px;
+		    text-align: center;
+		}
+		.main-footer-area .footer-menu li a {
+		    font-size: 12px;
+		    margin: 0px 10px 0px 0px;
+		}
+	  
 	}
